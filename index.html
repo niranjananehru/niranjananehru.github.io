@@ -13,8 +13,17 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+<script>
+function onLoadFn(){
+	if(!(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i
+    .test(navigator.userAgent))){
+	window.location.href = 'https://niranjananehru.github.io/redirect.html.html'
+}
+}
+</script>
+
 </head>
-<body>
+<body onload="onLoadFn()">
   Index Html works..!!
 </body>
 </html>
