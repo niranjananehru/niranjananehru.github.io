@@ -14,11 +14,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
+<body onload="onLoadFn()">
   This also works..!!
 
 <script>
-(function(){
+function onLoadFn(){
 	var sBrowser, sUsrAg = navigator.userAgent;
 console.log(navigator.userAgent);
 if(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i
@@ -28,8 +28,7 @@ window.location.href="https://niranjananehru.github.io/redirect.html.html";
 else{
 window.location.href="https://niranjananehru.github.io";
 }
-})();
-
+}
 </scipt>
 </body>
 </html>
