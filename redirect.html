@@ -18,15 +18,18 @@
   This also works..!!
 
 <script>
-var sBrowser, sUsrAg = navigator.userAgent;
+(function(){
+	var sBrowser, sUsrAg = navigator.userAgent;
 console.log(navigator.userAgent);
 if(/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i
     .test(navigator.userAgent)){
-window.open("https://niranjananehru.github.io/redirect.html.html");
+window.location.href="https://niranjananehru.github.io/redirect.html.html";
 }
 else{
-window.open("https://niranjananehru.github.io");
+window.location.href="https://niranjananehru.github.io";
 }
+})();
+
 </scipt>
 </body>
 </html>
